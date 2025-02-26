@@ -1,3 +1,5 @@
+<!-- Cambio menor para forzar redeploy -->
+
 {
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
