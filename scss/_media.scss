@@ -1,0 +1,60 @@
+@media (max-width: 1024px) { // Tablets grandes 
+    .img-grupo img {
+        max-width: 220px;  
+    }
+}
+
+@media (max-width: 768px) { // Para pantallas tipo tablets y móviles 
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .nav-link.active {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-size: 12px; // Mueve la propiedad aquí
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .img-grupo img {
+        max-width: 180px; 
+    }
+
+    .video-container {
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 480px) { // Para celulares pequeños
+    .video-container {
+        width: 90%;
+        margin: auto;
+        max-width: 95%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .img-grupo {
+        flex-direction: column;  
+        gap: 5px;
+    }
+}
