@@ -1,4 +1,4 @@
-/* Media Queries */
+/*  Media Queries */
 
 /* Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
@@ -7,7 +7,7 @@
     }
 }
 
-/* Ajustes para Tablets y Móviles */
+/*  Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
     footer {
         font-size: 14px;
@@ -46,7 +46,7 @@
     }
 }
 
-/* Ajustes específicos para Celulares pequeños */
+/* Ajustes para Celulares pequeños */
 @media (max-width: 576px) {
     body {
         width: 100% !important;
@@ -72,8 +72,6 @@
         text-align: justify !important;
         line-height: 1.8 !important;
         padding: 0 2% !important;
-        word-spacing: 0px !important;
-        letter-spacing: 0px !important;
         white-space: normal !important;
         hyphens: auto !important;
     }
@@ -111,19 +109,20 @@
     }
 
     .mapa-container iframe {
-        width: 100% !important; /* Ocupa todo el ancho disponible */
+        width: 100% !important;
         max-width: 100% !important;
-        height: 300px !important; /* Ajusta la altura */
+        height: 300px !important;
         display: block;
         margin: 0 auto;
-        border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+        border-radius: 10px;
     }
 
     /* Alineación del footer */
     footer {
         text-align: center !important;
         padding: 20px !important;
-        border: 8px solid black;
+        width: 100%;
+        max-width: 100%;
     }
 
     footer .redes {
@@ -138,7 +137,7 @@
     }
 }
 
-/* Contenedor de imágenes */
+/*  Ajustes de imágenes en "Guitarras a Pedido" */
 .contenedor-imagenes {
     display: flex;
     justify-content: center;
@@ -146,7 +145,6 @@
     padding: 20px;
 }
 
-/* Tamaño de imágenes */
 .guitarra-img {
     width: 45%;
     max-width: 500px;
@@ -154,7 +152,7 @@
     border-radius: 10px;
 }
 
-/* Ajuste del párrafo */
+/*  Ajuste del párrafo */
 .lead {
     width: 80%;
     max-width: 900px;
@@ -164,7 +162,7 @@
     margin: 0 auto;
 }
 
-/* Ajustes para móviles */
+/*  Ajustes para móviles */
 @media (max-width: 768px) {
     .contenedor-imagenes {
         flex-direction: column;

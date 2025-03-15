@@ -115,7 +115,7 @@ header {
   font-size: 18px;
 }
 
-/* Estilos del Footer */
+/*  Estilos del Footer */
 footer {
   color: white;
   background-color: rgba(19, 17, 16, 0.856);
@@ -123,30 +123,32 @@ footer {
   text-align: center;
   padding: 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.redes {
+/* Redes sociales en el Footer */
+footer .redes {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
-.redes img {
+
+footer .redes img {
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease;
 }
-.redes img:hover {
+
+footer .redes img:hover {
   filter: brightness(0.7);
   transform: scale(1.1);
 }
 
-.nav-link.active {
-  color: grey;
-  font-weight: bold;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* ✅ Media Queries */
+/*  Media Queries */
 @media (max-width: 768px) {
   header {
     text-align: center;
@@ -158,8 +160,8 @@ footer {
     padding: 10px;
   }
 }
+/* Ajuste del Footer en móviles */
 @media (max-width: 576px) {
-  /* Corrección del Footer en móviles */
   footer {
     text-align: center !important;
     width: 100% !important;
@@ -167,17 +169,17 @@ footer {
     margin: 0 auto !important;
     padding: 15px 5% !important;
   }
-  .redes {
+  footer .redes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
   }
-  .redes img {
+  footer .redes img {
     width: 30px;
     height: 30px;
   }
-  /*  Centra los enlaces y el contenido */
+  /* Centra el contenido del Footer */
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -189,14 +191,14 @@ footer {
   }
 }
 /* Importar otros archivos SCSS */
-/* Media Queries */
+/*  Media Queries */
 /* Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
   }
 }
-/* Ajustes para Tablets y Móviles */
+/*  Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
@@ -228,7 +230,7 @@ footer {
     aspect-ratio: 16/9;
   }
 }
-/* Ajustes específicos para Celulares pequeños */
+/* Ajustes para Celulares pequeños */
 @media (max-width: 576px) {
   body {
     width: 100% !important;
@@ -251,8 +253,6 @@ footer {
     text-align: justify !important;
     line-height: 1.8 !important;
     padding: 0 2% !important;
-    word-spacing: 0px !important;
-    letter-spacing: 0px !important;
     white-space: normal !important;
     hyphens: auto !important;
   }
@@ -284,18 +284,19 @@ footer {
     align-items: center;
   }
   .mapa-container iframe {
-    width: 100% !important; /* Ocupa todo el ancho disponible */
+    width: 100% !important;
     max-width: 100% !important;
-    height: 300px !important; /* Ajusta la altura */
+    height: 300px !important;
     display: block;
     margin: 0 auto;
-    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+    border-radius: 10px;
   }
   /* Alineación del footer */
   footer {
     text-align: center !important;
     padding: 20px !important;
-    border: 8px solid black;
+    width: 100%;
+    max-width: 100%;
   }
   footer .redes {
     display: flex;
@@ -307,7 +308,7 @@ footer {
     height: 30px !important;
   }
 }
-/* Contenedor de imágenes */
+/*  Ajustes de imágenes en "Guitarras a Pedido" */
 .contenedor-imagenes {
   display: flex;
   justify-content: center;
@@ -315,7 +316,6 @@ footer {
   padding: 20px;
 }
 
-/* Tamaño de imágenes */
 .guitarra-img {
   width: 45%;
   max-width: 500px;
@@ -323,7 +323,7 @@ footer {
   border-radius: 10px;
 }
 
-/* Ajuste del párrafo */
+/*  Ajuste del párrafo */
 .lead {
   width: 80%;
   max-width: 900px;
@@ -333,7 +333,7 @@ footer {
   margin: 0 auto;
 }
 
-/* Ajustes para móviles */
+/*  Ajustes para móviles */
 @media (max-width: 768px) {
   .contenedor-imagenes {
     flex-direction: column;
@@ -417,14 +417,14 @@ p {
   margin: auto;
 }
 
-/* Media Queries */
+/*  Media Queries */
 /* Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
   }
 }
-/* Ajustes para Tablets y Móviles */
+/*  Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
@@ -456,7 +456,7 @@ p {
     aspect-ratio: 16/9;
   }
 }
-/* Ajustes específicos para Celulares pequeños */
+/* Ajustes para Celulares pequeños */
 @media (max-width: 576px) {
   body {
     width: 100% !important;
@@ -479,8 +479,6 @@ p {
     text-align: justify !important;
     line-height: 1.8 !important;
     padding: 0 2% !important;
-    word-spacing: 0px !important;
-    letter-spacing: 0px !important;
     white-space: normal !important;
     hyphens: auto !important;
   }
@@ -512,18 +510,19 @@ p {
     align-items: center;
   }
   .mapa-container iframe {
-    width: 100% !important; /* Ocupa todo el ancho disponible */
+    width: 100% !important;
     max-width: 100% !important;
-    height: 300px !important; /* Ajusta la altura */
+    height: 300px !important;
     display: block;
     margin: 0 auto;
-    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+    border-radius: 10px;
   }
   /* Alineación del footer */
   footer {
     text-align: center !important;
     padding: 20px !important;
-    border: 8px solid black;
+    width: 100%;
+    max-width: 100%;
   }
   footer .redes {
     display: flex;
@@ -535,7 +534,7 @@ p {
     height: 30px !important;
   }
 }
-/* Contenedor de imágenes */
+/*  Ajustes de imágenes en "Guitarras a Pedido" */
 .contenedor-imagenes {
   display: flex;
   justify-content: center;
@@ -543,7 +542,6 @@ p {
   padding: 20px;
 }
 
-/* Tamaño de imágenes */
 .guitarra-img {
   width: 45%;
   max-width: 500px;
@@ -551,7 +549,7 @@ p {
   border-radius: 10px;
 }
 
-/* Ajuste del párrafo */
+/*  Ajuste del párrafo */
 .lead {
   width: 80%;
   max-width: 900px;
@@ -561,7 +559,7 @@ p {
   margin: 0 auto;
 }
 
-/* Ajustes para móviles */
+/*  Ajustes para móviles */
 @media (max-width: 768px) {
   .contenedor-imagenes {
     flex-direction: column;
