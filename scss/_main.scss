@@ -1,11 +1,72 @@
+/* Importar otros archivos SCSS */
+@import 'media';
+
+/* Estilos Generales */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 main {
-    background-color: $primary-color;
-    color: $text-color;
+    background-color: black;
+    color: white;
     text-align: justify;
-    padding: $padding-main;
+    padding: 4%; /* Reducido para mejorar el ancho del texto */
 }
 
-#seguinos {
-    text-align: center;
+/* Contenedor */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
 }
 
+/* Párrafos */
+p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    padding: 0 3%;
+    word-spacing: normal;
+    letter-spacing: normal;
+    white-space: normal;
+    hyphens: auto;
+}
+
+/* Imágenes */
+.img-grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.img-grupo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Video */
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}

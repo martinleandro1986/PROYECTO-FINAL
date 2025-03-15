@@ -142,17 +142,8 @@ footer .redes img:hover {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-main {
-  background-color: black;
-  color: white;
-  text-align: justify;
-  padding: 8em;
-}
-
-#seguinos {
-  text-align: center;
-}
-
+/* Importar otros archivos SCSS */
+/* Media Queries */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
@@ -193,25 +184,182 @@ main {
   body {
     width: 100% !important;
   }
+  main {
+    padding: 4% !important;
+  }
   .container {
     width: 100% !important;
-    max-width: 95% !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
-    padding: 0 2% !important; /* Espacio reducido en los lados */
+    padding: 0 3% !important;
   }
   p {
     display: block !important;
-    width: 95% !important; /* Párrafos más anchos */
+    width: 95% !important;
     max-width: 100% !important;
     margin: 0 auto !important;
     font-size: 18px !important;
-    text-align: justify !important; /* Justificación sin separación extraña */
-    line-height: 1.8 !important; /* Espaciado entre líneas */
-    padding: 0 2% !important; /* Menos padding en los lados */
-    word-spacing: 0px !important; /* Evita espacios exagerados entre palabras */
+    text-align: justify !important;
+    line-height: 1.8 !important;
+    padding: 0 2% !important;
+    word-spacing: 0px !important;
     letter-spacing: 0px !important;
-    white-space: normal !important; /* Corrige la distribución del texto */
-    hyphens: none !important; /* Evita cortes raros de palabras */
+    white-space: normal !important;
+    hyphens: auto !important;
+  }
+  .img-grupo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .img-grupo img {
+    max-width: 100% !important;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 120px !important;
+  }
+  .video-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: auto;
+  }
+}
+/* Estilos Generales */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: black;
+  color: white;
+  text-align: justify;
+  padding: 4%; /* Reducido para mejorar el ancho del texto */
+}
+
+/* Contenedor */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+/* Párrafos */
+p {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.8;
+  padding: 0 3%;
+  word-spacing: normal;
+  letter-spacing: normal;
+  white-space: normal;
+  hyphens: auto;
+}
+
+/* Imágenes */
+.img-grupo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.img-grupo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Video */
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .img-grupo img {
+    max-width: 220px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .nav-link.active {
+    font-size: 14px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .img-grupo img {
+    max-width: 180px;
+  }
+  .video-container {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    width: 100% !important;
+  }
+  main {
+    padding: 4% !important;
+  }
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 3% !important;
+  }
+  p {
+    display: block !important;
+    width: 95% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 18px !important;
+    text-align: justify !important;
+    line-height: 1.8 !important;
+    padding: 0 2% !important;
+    word-spacing: 0px !important;
+    letter-spacing: 0px !important;
+    white-space: normal !important;
+    hyphens: auto !important;
   }
   .img-grupo {
     flex-direction: column;
