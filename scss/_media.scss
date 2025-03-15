@@ -60,12 +60,13 @@
         max-width: 100vw !important;
         margin: 0 auto !important;
         font-size: 18px !important; 
-        text-align: left !important; /* Evita separación excesiva */
+        text-align: justify !important; /* Justificación completa pero sin separar palabras */
         line-height: 1.8 !important; /* Mejora la lectura */
         padding: 0 5vw !important; /* Espaciado en los lados */
         word-spacing: normal !important; 
         letter-spacing: normal !important;
         white-space: normal !important; /* Evita que las palabras se distribuyan mal */
+        hyphens: auto !important; /* Corta palabras si es necesario para evitar espacios grandes */
     }
 
     .img-grupo {
