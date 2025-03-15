@@ -1,13 +1,13 @@
 /* Media Queries */
 
-/*Ajustes para Tablets grandes */
+/* ✅ Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
     .img-grupo img {
         max-width: 220px;
     }
 }
 
-/*  Ajustes para Tablets y Móviles */
+/* ✅ Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
     footer {
         font-size: 14px;
@@ -46,7 +46,7 @@
     }
 }
 
-/*  Ajustes específicos para Celulares pequeños */
+/* ✅ Ajustes específicos para Celulares pequeños */
 @media (max-width: 576px) {
     body {
         width: 100% !important;
@@ -101,12 +101,14 @@
         margin: auto;
     }
 
-    /*  ajuste del Mapa en móviles */
+    /* ✅ Corrección del Mapa en móviles */
     .mapa-container {
         width: 100% !important;
         max-width: 100% !important;
         display: flex;
         justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Evita desbordamientos */
     }
 
     .mapa-container iframe {
@@ -115,6 +117,8 @@
         height: 250px !important; /* Ajusta la altura */
         display: block;
         margin: 0 auto;
+        border: none; /* Quita bordes extra */
         border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+        object-fit: cover; /* Ajusta la imagen del mapa para que no se deforme */
     }
 }
