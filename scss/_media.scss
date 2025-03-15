@@ -4,7 +4,7 @@
     }
 }
 
-@media (max-width: 768px) { // Para pantallas tipo tablets y móviles 
+@media (max-width: 768px) { // Para tablets y móviles 
     footer {
         font-size: 14px;
         padding: 10px;
@@ -25,7 +25,7 @@
         text-align: center;
         display: block;
         width: 100%;
-        font-size: 12px; // Mueve la propiedad aquí
+        font-size: 12px;
     }
 
     .logo {
@@ -42,27 +42,42 @@
     }
 }
 
-@media (max-width: 480px) { // Para celulares pequeños
-    .video-container {
-        width: 90%;
-        margin: auto;
-        max-width: 95%;
+@media (max-width: 576px) { // Ajustes específicos para celulares pequeños
+    p {
+        max-width: 90%; 
+        margin: 0 auto;
+        font-size: 16px; 
+        text-align: justify;
+        line-height: 1.6;
+        padding: 0 1rem;
+    }
+
+    .img-grupo {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px;
+    }
+
+    .img-grupo img {
+        max-width: 80%; 
+        display: block;
+        height: auto;
+        margin: 0 auto;
     }
 
     .logo {
         width: 100px;
     }
 
-    .img-grupo {
-        flex-direction: column;     
-        gap: 5px;
+    .video-container {
+        width: 90%;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
-
-@media (max-width: 576px) {
-    p {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
-  
