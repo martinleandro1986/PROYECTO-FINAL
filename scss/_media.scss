@@ -137,3 +137,46 @@
         height: 30px !important;
     }
 }
+
+/* Contenedor de imágenes */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tamaño de imágenes */
+.guitarra-img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ajuste del párrafo */
+.lead {
+    width: 80%;
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .contenedor-imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guitarra-img {
+        width: 80%;
+    }
+
+    .lead {
+        width: 90%;
+        text-align: justify;
+    }
+}
