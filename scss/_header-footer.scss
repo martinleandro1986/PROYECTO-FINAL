@@ -1,11 +1,11 @@
-/* Estilos del Header */
+/* ✅ Estilos del Header */
 header {
     background-color: $primary-color;
     padding: 20px;
     font-size: $font-size-main;
 }
 
-/*  Estilos del Footer */
+/* ✅ Estilos del Footer */
 footer {
     color: $text-color;
     background-color: $secondary-color;
@@ -19,7 +19,7 @@ footer {
     justify-content: center;
 }
 
-/* Redes sociales en el Footer */
+/* ✅ Redes sociales en el Footer */
 footer .redes {
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ footer .redes img:hover {
     transform: scale(1.1);
 }
 
-/*  Media Queries */
+/* ✅ Media Queries */
 @media (max-width: 768px) {
     header {
         text-align: center;
@@ -52,7 +52,7 @@ footer .redes img:hover {
     }
 }
 
-/* Ajuste del Footer en móviles */
+/* ✅ Ajuste del Footer en móviles */
 @media (max-width: 576px) {
     footer {
         text-align: center !important;
@@ -60,6 +60,10 @@ footer .redes img:hover {
         max-width: 100% !important;
         margin: 0 auto !important;
         padding: 15px 5% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     footer .redes {
@@ -74,7 +78,7 @@ footer .redes img:hover {
         height: 30px;
     }
 
-    /* Centra el contenido del Footer */
+    /* ✅ Centra el contenido del Footer */
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -86,4 +90,3 @@ footer .redes img:hover {
         text-align: center !important;
     }
 }
-

@@ -1,6 +1,6 @@
 /*  Media Queries */
 
-/* Ajustes para Tablets grandes */
+/*  Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
     .img-grupo img {
         max-width: 220px;
@@ -123,11 +123,16 @@
         padding: 20px !important;
         width: 100%;
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     footer .redes {
         display: flex;
         justify-content: center;
+        text-align: center;
         gap: 10px;
     }
 
@@ -162,7 +167,7 @@
     margin: 0 auto;
 }
 
-/*  Ajustes para móviles */
+/* Ajustes para móviles */
 @media (max-width: 768px) {
     .contenedor-imagenes {
         flex-direction: column;
