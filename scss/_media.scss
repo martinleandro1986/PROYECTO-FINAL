@@ -101,26 +101,28 @@
         margin: auto;
     }
 
-    /* Corrección FINAL del Mapa en móviles */
+    /* ✅ Ajuste final del mapa en móviles */
     .mapa-container {
-        width: 100% !important;
-        max-width: 100% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-    }
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 0; /* Espaciado arriba y abajo */
+}
 
     .mapa-container iframe {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 250px !important;
-        display: block;
-        margin: 0 auto;
-        border: none !important;
-        border-radius: 10px !important;
-    }
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 250px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
 
     /* Corrección del Footer en móviles */
     footer {
