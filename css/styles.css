@@ -190,13 +190,13 @@ footer {
 }
 /* Importar otros archivos SCSS */
 /* Media Queries */
-/*  Ajustes para Tablets grandes */
+/*Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
   }
 }
-/* Ajustes para Tablets y Móviles */
+/*  Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
@@ -228,7 +228,7 @@ footer {
     aspect-ratio: 16/9;
   }
 }
-/* Ajustes específicos para Celulares pequeños */
+/*  Ajustes específicos para Celulares pequeños */
 @media (max-width: 576px) {
   body {
     width: 100% !important;
@@ -275,13 +275,20 @@ footer {
     max-width: 100% !important;
     margin: auto;
   }
-  /* Corrige el tamaño del Mapa en celulares*/
-  .mapa-container iframe {
-    width: 100% !important; /* Ocupa el ancho completo */
+  /*  ajuste del Mapa en móviles */
+  .mapa-container {
+    width: 100% !important;
     max-width: 100% !important;
-    height: 250px !important; /* Ajusta la altura para celulares */
+    display: flex;
+    justify-content: center;
+  }
+  .mapa-container iframe {
+    width: 100% !important; /* Ocupa todo el ancho disponible */
+    max-width: 100% !important;
+    height: 250px !important; /* Ajusta la altura */
     display: block;
     margin: 0 auto;
+    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
   }
 }
 /* Estilos Generales */
@@ -355,13 +362,13 @@ p {
 }
 
 /* Media Queries */
-/*  Ajustes para Tablets grandes */
+/*Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
   }
 }
-/* Ajustes para Tablets y Móviles */
+/*  Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
@@ -393,7 +400,7 @@ p {
     aspect-ratio: 16/9;
   }
 }
-/* Ajustes específicos para Celulares pequeños */
+/*  Ajustes específicos para Celulares pequeños */
 @media (max-width: 576px) {
   body {
     width: 100% !important;
@@ -440,13 +447,20 @@ p {
     max-width: 100% !important;
     margin: auto;
   }
-  /* Corrige el tamaño del Mapa en celulares*/
-  .mapa-container iframe {
-    width: 100% !important; /* Ocupa el ancho completo */
+  /*  ajuste del Mapa en móviles */
+  .mapa-container {
+    width: 100% !important;
     max-width: 100% !important;
-    height: 250px !important; /* Ajusta la altura para celulares */
+    display: flex;
+    justify-content: center;
+  }
+  .mapa-container iframe {
+    width: 100% !important; /* Ocupa todo el ancho disponible */
+    max-width: 100% !important;
+    height: 250px !important; /* Ajusta la altura */
     display: block;
     margin: 0 auto;
+    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
   }
 }
 
