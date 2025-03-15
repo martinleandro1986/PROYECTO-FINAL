@@ -51,7 +51,7 @@
     body {
         width: 100% !important;
     }
-
+    
     main {
         padding: 4% !important;
     }
@@ -60,7 +60,7 @@
         width: 100% !important;
         max-width: 95% !important;
         margin: 0 auto !important;
-        padding: 0 2% !important;
+        padding: 0 3% !important;
     }
 
     p {
@@ -75,7 +75,7 @@
         word-spacing: 0px !important;
         letter-spacing: 0px !important;
         white-space: normal !important;
-        hyphens: none !important;
+        hyphens: auto !important;
     }
 
     .img-grupo {
@@ -101,55 +101,39 @@
         margin: auto;
     }
 
-    /* ✅ Ajuste final del mapa en móviles */
+    /* Ajuste del Mapa en móviles */
     .mapa-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 10px 0; /* Espaciado arriba y abajo */
-}
-
-    .mapa-container iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-height: 250px !important;
-    height: auto !important;
-    display: block;
-    margin: 0 auto;
-    border: none !important;
-    border-radius: 10px !important;
-}
-
-
-    /* Corrección del Footer en móviles */
-    footer {
         width: 100% !important;
         max-width: 100% !important;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
-        padding: 15px;
+        align-items: center;
+    }
+
+    .mapa-container iframe {
+        width: 100% !important; /* Ocupa todo el ancho disponible */
+        max-width: 100% !important;
+        height: 300px !important; /* Ajusta la altura */
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+    }
+
+    /* Alineación del footer */
+    footer {
+        text-align: center !important;
+        padding: 20px !important;
+        border: 8px solid black;
     }
 
     footer .redes {
         display: flex;
         justify-content: center;
         gap: 10px;
-        margin-top: 10px;
     }
 
     footer .redes img {
-        width: 35px;
-        height: 35px;
-        transition: transform 0.3s ease;
-    }
-
-    footer .redes img:hover {
-        transform: scale(1.1);
+        width: 30px !important;
+        height: 30px !important;
     }
 }
