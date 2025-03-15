@@ -108,30 +108,34 @@ button {
   transform: translateY(0);
 }
 
+/* Estilos del Header */
 header {
   background-color: black;
   padding: 20px;
   font-size: 18px;
 }
 
+/* Estilos del Footer */
 footer {
   color: white;
   background-color: rgba(19, 17, 16, 0.856);
   border: 10px solid black;
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
-footer .redes {
+
+.redes {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-footer .redes img {
+.redes img {
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease;
 }
-footer .redes img:hover {
+.redes img:hover {
   filter: brightness(0.7);
   transform: scale(1.1);
 }
@@ -142,13 +146,57 @@ footer .redes img:hover {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* ✅ Media Queries */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 15px;
+  }
+  .nav-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  /* Corrección del Footer en móviles */
+  footer {
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 15px 5% !important;
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .redes img {
+    width: 30px;
+    height: 30px;
+  }
+  /*  Centra los enlaces y el contenido */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-content p, .footer-content a {
+    text-align: center !important;
+  }
+}
 /* Importar otros archivos SCSS */
 /* Media Queries */
+/*  Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
   }
 }
+/* Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
@@ -180,6 +228,7 @@ footer .redes img:hover {
     aspect-ratio: 16/9;
   }
 }
+/* Ajustes específicos para Celulares pequeños */
 @media (max-width: 576px) {
   body {
     width: 100% !important;
@@ -225,6 +274,14 @@ footer .redes img:hover {
     width: 100% !important;
     max-width: 100% !important;
     margin: auto;
+  }
+  /* Corrige el tamaño del Mapa en celulares*/
+  .mapa-container iframe {
+    width: 100% !important; /* Ocupa el ancho completo */
+    max-width: 100% !important;
+    height: 250px !important; /* Ajusta la altura para celulares */
+    display: block;
+    margin: 0 auto;
   }
 }
 /* Estilos Generales */
@@ -298,11 +355,13 @@ p {
 }
 
 /* Media Queries */
+/*  Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
   .img-grupo img {
     max-width: 220px;
   }
 }
+/* Ajustes para Tablets y Móviles */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
@@ -334,6 +393,7 @@ p {
     aspect-ratio: 16/9;
   }
 }
+/* Ajustes específicos para Celulares pequeños */
 @media (max-width: 576px) {
   body {
     width: 100% !important;
@@ -379,6 +439,14 @@ p {
     width: 100% !important;
     max-width: 100% !important;
     margin: auto;
+  }
+  /* Corrige el tamaño del Mapa en celulares*/
+  .mapa-container iframe {
+    width: 100% !important; /* Ocupa el ancho completo */
+    max-width: 100% !important;
+    height: 250px !important; /* Ajusta la altura para celulares */
+    display: block;
+    margin: 0 auto;
   }
 }
 
