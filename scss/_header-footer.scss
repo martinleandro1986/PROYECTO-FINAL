@@ -7,19 +7,15 @@ header {
 
 /*   Estilos del Footer (Corrección) */
 footer {
-    color: $text-color;
-    background-color: $secondary-color;
-    border: 10px solid $primary-color;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; /* Para asegurar que quede centrado */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
 }
-
 /*  Centra el contenido dentro del footer */
 .footer-content {
     width: 100%;
