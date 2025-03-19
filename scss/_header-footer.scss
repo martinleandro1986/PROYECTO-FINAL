@@ -5,7 +5,7 @@ header {
     font-size: $font-size-main;
 }
 
-/*  Estilos del Footer */
+/*   Estilos del Footer (Corrección) */
 footer {
     color: $text-color;
     background-color: $secondary-color;
@@ -17,6 +17,15 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto; /* Para asegurar que quede centrado */
+}
+
+/*  Centra el contenido dentro del footer */
+.footer-content {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* Redes sociales en el Footer */
@@ -38,7 +47,7 @@ footer .redes img:hover {
     transform: scale(1.1);
 }
 
-/*  Media Queries */
+/* Media Queries */
 @media (max-width: 768px) {
     header {
         text-align: center;
@@ -50,9 +59,15 @@ footer .redes img:hover {
         text-align: center;
         padding: 10px;
     }
+
+    /* Ajuste del Footer en tablets */
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
 }
 
-/* Ajuste del Footer en móviles */
+/* Ajuste del Footer en celus */
 @media (max-width: 576px) {
     footer {
         text-align: center !important;
@@ -74,7 +89,6 @@ footer .redes img:hover {
         height: 30px;
     }
 
-    /* Centra el contenido del Footer */
     .footer-content {
         display: flex;
         flex-direction: column;
