@@ -1,6 +1,6 @@
 /*  Media Queries */
 
-/*  Ajustes para Tablets grandes */
+/* Ajustes para Tablets grandes */
 @media (max-width: 1024px) {
     .img-grupo img {
         max-width: 220px;
@@ -167,7 +167,7 @@
     margin: 0 auto;
 }
 
-/* Ajustes para móviles */
+/*  Ajustes para móviles */
 @media (max-width: 768px) {
     .contenedor-imagenes {
         flex-direction: column;
